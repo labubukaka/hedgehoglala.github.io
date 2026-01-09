@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt Me — Ёжик</title>
+    <style>
+        body {
+            background-color: #f2f7ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 320px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 220px;
+            image-rendering: pixelated;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff3366;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Roblox Adopt Me</h1>
+    <p>Питомец: Ёжик 🦔</p>
+</header>
+
+<div class="card">
+    <img src="ezhik.jpg" alt="Ёжик Adopt Me">
+
+    <h2>Ёжик</h2>
+    <p>
+        Ёжик — это <b>ультраредкий питомец</b> в игре Adopt Me 🟣<br><br>
+        Он выглядит очень мило и ценится игроками за свою редкость.
+        Ёжик стал одним из самых любимых питомцев среди коллекционеров.
+    </p>
+
+    <button onclick="pukni()">Пукни 💨</button>
+</div>
+
+<audio id="pukSound" src="puk.mp3"></audio>
+
+<script>
+    function pukni() {
+        document.getElementById("pukSound").play();
+    }
+</script>
+
+</body>
+</html>
